@@ -10,7 +10,7 @@ body {
 /* HEADER */
 header {
   background-color: $header-bg-color;
-  padding: 2.5rem;
+  padding: 3rem;
 
   .row {
     @include set-flex-container;
@@ -28,19 +28,37 @@ header {
 
       input, #search-button {
         border-radius: $border-radius;
+        height: 30px;
       }
 
       input {
         width: 50%;
         border: none;
-        padding: 0.5rem 0;
+
       }
 
       #search-button {
         margin-left: 1rem;
         background-color: $search-button-color;
-        padding: 0.5rem 1rem;
-      }
+        padding: 0 1rem;
+        @include set-flex-container;
+
+        i {
+
+          font-size: 1.3rem;
+        }
+      } /* end search-button */
     } /* end search-container */
+  } /* end row */
+} /* end header */
+
+/* HEADLINE */
+#headline {
+  background-color: $headline-bg-color;
+  color: white;
+  padding: 1rem 0 1rem 10%;
+
+  .row {
+
   }
 }
