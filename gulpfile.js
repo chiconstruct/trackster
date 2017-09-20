@@ -71,7 +71,7 @@ var compiledHTMLPages = distributeDir + '/*.html';
 
 
 /* Settings */
-var siteProxy = "match-game.dev"
+var siteProxy = "trackster.dev"
 
 /****** GR-Tasks ***/
 // for build

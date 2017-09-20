@@ -1,0 +1,46 @@
+/* GENERAL */
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $base-font;
+}
+
+/* HEADER */
+header {
+  background-color: $header-bg-color;
+  padding: 2.5rem;
+
+  .row {
+    @include set-flex-container;
+
+    .title {
+      h1 {
+        color: $title-color;
+        font-size: 2.5rem;
+        font-family: $title-font;
+      }
+    } /* end title */
+
+    .search-container {
+      @include set-flex-container;
+
+      input, #search-button {
+        border-radius: $border-radius;
+      }
+
+      input {
+        width: 50%;
+        border: none;
+        padding: 0.5rem 0;
+      }
+
+      #search-button {
+        margin-left: 1rem;
+        background-color: $search-button-color;
+        padding: 0.5rem 1rem;
+      }
+    } /* end search-container */
+  }
+}
